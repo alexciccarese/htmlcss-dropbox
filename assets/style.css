@@ -180,7 +180,6 @@ main {
     }
 
     .container {
-      height: 800px;
       margin-top: 2rem;
 
     }
@@ -226,6 +225,16 @@ main {
       gap: 0.5rem;
       padding: 0.5rem 0;
       font-size: 12px;
+    }
+
+    .enterprice {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .text {
+        width: 70%;
+      }
     }
 
     .buy_now {

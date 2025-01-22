@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --dr-primary:#0061fe;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+}
 
 .debug {
 
@@ -12,13 +19,50 @@
   }
 
   header {
-    background-color: orange;
-    min-height: 60px;
+    background-color: rgba(255, 166, 0, 0.237);
   }
 }
 
 .site_header {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 1rem;
+
+  nav {
+    width: 100%;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+
+
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 2rem;
+  
+        a {
+          font-size: 14px;
+          color: black;
+          text-decoration: none;
+          padding-bottom: 1.5rem;
+  
+          &:hover {
+            border-bottom: 2px solid;
+          }
+        }
+
+        .button {
+          background-color: var(--dr-primary);
+          padding: 6px 14px;
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+
+  }
 }

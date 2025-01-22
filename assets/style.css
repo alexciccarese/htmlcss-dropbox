@@ -21,12 +21,23 @@ body {
   header {
     background-color: rgba(255, 166, 0, 0.237);
   }
+
+  main {
+
+    .jumbotron {
+      background-color: rgb(68, 232, 232);
+
+      .container{
+        background-color: blue;
+      }
+    }
+  }
 }
 
 .site_header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  align-items: center;
 
   nav {
     width: 100%;
@@ -35,18 +46,17 @@ body {
       display: flex;
       justify-content: space-between;
 
-
       ul {
         display: flex;
         align-items: center;
         list-style: none;
         gap: 2rem;
+        padding: 1.4rem;
   
         a {
           font-size: 14px;
           color: black;
           text-decoration: none;
-          padding-bottom: 1.5rem;
   
           &:hover {
             border-bottom: 2px solid;
@@ -64,5 +74,43 @@ body {
       }
     }
 
+  }
+}
+
+main {
+
+  .jumbotron {
+    min-height: 800px;
+
+    .container {
+      width: 60%;
+
+      margin: auto;
+      padding-top: 5rem;
+
+
+      h1 {
+        width: 100%;
+        text-align: center;
+      }
+
+      .content {
+        padding-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+
+              .left {
+                background-color: yellow;
+                height: 200px;
+                width: 40%;
+              }
+
+              .right {
+                background-color: black;
+                height: 200px;
+                width: 60%;
+              }
+      }
+    }
   }
 }

@@ -69,6 +69,17 @@ body {
       justify-content: space-between;
       padding: 0 1.4rem;
 
+      .menu {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        img {
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+      }
+
       ul {
         display: flex;
         align-items: center;
@@ -81,7 +92,7 @@ body {
           }
         }
 
-        .links {
+        li {
           padding: 1.4rem 0;
           border-bottom: 2px solid transparent;
 
@@ -107,6 +118,7 @@ body {
   padding: 12px 10px;
   text-align: center;
   max-width: 270px;
+  max-height: 42px;
   font-size: 14px;
 
   a {

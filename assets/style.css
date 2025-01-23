@@ -11,6 +11,7 @@
 }
 
 body {
+  min-width: 1440px;
   font-family: "Montserrat", serif;
 
   h1 {
@@ -337,7 +338,8 @@ main {
 }
 
 .partner {
-  padding: 5rem 0;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
   display: flex;
   justify-content: center;
 
@@ -383,4 +385,22 @@ main {
     }
   }
 
+}
+
+.operations {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    background-color: red;
+
+    .row {
+      background-color: yellow;
+      width: 100%;
+      height: 500px;
+
+
+  }
 }

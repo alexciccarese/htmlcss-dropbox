@@ -133,10 +133,10 @@ body {
 
 main {
 
-  .jumbotron {
+  #jumbotron {
     background-color: var(--dr-background-light);
 
-    .container_jumb {
+    #container_jumb {
       width: 65%;
       margin: auto;
       padding-top: 6rem;
@@ -153,7 +153,7 @@ main {
         display: flex;
         justify-content: space-between;
 
-        .left {
+        #left {
           position: relative;
           width: 28%;
 
@@ -161,14 +161,14 @@ main {
             margin: 2rem 0;
           }
 
-          .arrow {
+          #arrow {
             position: absolute;
             bottom: 1rem;
             height: 56px;
           }
         }
 
-        .right {
+        #right {
           width: 70%;
 
           img {
@@ -180,7 +180,7 @@ main {
     }
   }
 
-  .Business {
+  #Business {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -191,7 +191,7 @@ main {
       width: 50%;
     }
 
-    .billing {
+    #billing {
       display: flex;
       gap: 3rem;
       margin-top: 4rem;
@@ -354,7 +354,7 @@ main {
   justify-content: center;
 }
 
-.partner {
+#partner {
   padding-top: 3rem;
   padding-bottom: 4rem;
   display: flex;
@@ -369,14 +369,14 @@ main {
     .img {
       width: 60%;
 
-      .partner {
+      #partner_img {
         width: 100%;
         height: 100%;
         padding: 0;
       }
     }
 
-    .text {
+    #text {
       width: 40%;
       padding-top: 3rem;
       padding-right: 1rem;
@@ -404,7 +404,7 @@ main {
 
 }
 
-.operations {
+#operations {
   padding-top: 3rem;
   padding-bottom: 4rem;
   display: flex;
@@ -432,7 +432,7 @@ main {
 
 }
 
-.know_more {
+#know_more {
   display: flex;
   justify-content: center;
 
@@ -455,7 +455,7 @@ main {
 }
 
 
-.site_footer {
+#site_footer {
   background-color: black;
 
   .container:last-child .col-2:first-child {
@@ -497,7 +497,7 @@ main {
           color: white;
         }
 
-        .language {
+        #language {
           display: flex;
           align-items: center;
           gap: 0.5rem;

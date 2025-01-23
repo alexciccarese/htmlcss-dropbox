@@ -55,6 +55,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  z-index: 5;
 
   nav {
     width: 100%;
@@ -437,19 +442,21 @@ main {
   }
 }
 
+
 .site_footer {
-  height: 500px;
   background-color: black;
+
+  .container:last-child .col-2:first-child {
+    padding-bottom: 0;
+  }
 
   .container {
     width: 65%;
-    height: 500px;
     margin: auto;
 
     .row {
       width: 100%;
       padding-top: 6rem;
-      height: 400px;
 
       .card {
         padding: 0 1rem 0 0;
@@ -460,7 +467,7 @@ main {
           list-style: none;
           line-height: 2rem;
 
-          a{
+          a {
             color: white;
             font-size: 14px;
             text-decoration: none;
@@ -476,25 +483,50 @@ main {
           color: white;
         }
 
-      }
+        .language {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 4rem 0;
+          border-top: 1px solid white;
 
-      [class^="col"] {
-        padding: 0;
-        margin: auto;
-        height: 100%;
-      }
+          img {
+            width: 16px;
+            height: 16px;
+          }
 
-      .col-2:first-child {
-        margin-left: 0;
-      }
+          details {
+            color: white;
+            width: 100%;
 
-      .col-2:last-child {
-        margin-right: 0;
+            summary {
+              list-style: none;
+            }
+          }
+
+          summary::after {
+            content: ' ▼';
+          }
+
+          details[open] summary:after {
+            content: " ▲";
+          }
+
+          [class^="col"] {
+            padding: 0;
+            margin: auto;
+            height: 100%;
+          }
+
+          .col-2:first-child {
+            margin-left: 0;
+          }
+
+          .col-2:last-child {
+            margin-right: 0;
+          }
+        }
       }
     }
-  }
-
-  .container:last-child {
-    height: 200px;
   }
 }
